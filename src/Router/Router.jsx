@@ -1,30 +1,15 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router'
-import Home from '../Components/Home'
-import Signup from '../Components/Signup'
-import Signin from '../Components/Signin'
-import ProtectedRoute from '../ProtectedRoute/ProtectedRoute'
+import Main from '../Components/Main/Main'
 
 export default function Router() {
     const router=createBrowserRouter([
         {
             path:"/",
             element:(
-            <Home/>   
+            <Main/>   
             )
-        },
-        {
-            path:"/signup",
-            element:<Signup/>
-        },
-        {
-            path:'/signin',
-            element:(
-                <ProtectedRoute>
-                    <Signin/>
-                </ProtectedRoute>
-            )
-        }
+        }  
     ])
   return (
     <div>
