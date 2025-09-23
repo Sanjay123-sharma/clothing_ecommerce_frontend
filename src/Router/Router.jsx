@@ -1,15 +1,14 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router'
-import Main from '../Components/Main/Main'
+import Home from '../Components/Home'
+
 
 export default function Router() {
     const router=createBrowserRouter([
-        {
-            path:"/",
-            element:(
-            <Main/>   
-            )
-        }  
+       {
+        path:"/",
+        element:<Home/>
+       } 
     ])
   return (
     <div>
